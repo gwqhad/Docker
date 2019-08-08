@@ -1,6 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER gwqhad gwqhad@163.com
+MAINTAINER saymagic saymagic@163.com
 RUN apt-get update
-RUN apt-get install  nginx
+RUN apt-get install -y nginx
 EXPOSE 80
-
