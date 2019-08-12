@@ -4,5 +4,5 @@ RUN apt-get update
 RUN apt-get install -y nginx
 COPY start.sh /usr/bin/start.sh
 RUN chmod +x /usr/bin/start.sh
-CMD ["start.sh","$0"]
+CMD start.sh $env
 EXPOSE 80
